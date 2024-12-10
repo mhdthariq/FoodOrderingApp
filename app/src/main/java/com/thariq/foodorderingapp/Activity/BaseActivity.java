@@ -21,7 +21,7 @@ public String TAG="food";
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        database=FirebaseDatabase.getInstance();
+        database=FirebaseDatabase.getInstance("https://food-ordering-app-28309-default-rtdb.asia-southeast1.firebasedatabase.app");
         mAuth=FirebaseAuth.getInstance();
 
         getWindow().setStatusBarColor(ContextCompat.getColor(this, R.color.white));
